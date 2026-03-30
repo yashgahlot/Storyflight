@@ -138,8 +138,8 @@ students across strategy and operations.`,
         ),
         title: "Enrollment Coordinator",
         subtitle: `2025-2026 · Oxford International
-Improved CRM accuracy and built analytics
-that supported better forecasting.`,
+Improved CRM accuracy, built analytics
+and supported better forecasting.`,
       },
     ];
   }, []);
