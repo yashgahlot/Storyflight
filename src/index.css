@@ -177,16 +177,66 @@ body {
   justify-content: center;
   opacity: 0;
   transition: opacity 4s ease-in-out;
+  pointer-events: none;
 }
 
 .outro--appear {
   opacity: 1;
+  pointer-events: auto;
+}
+
+.outro__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .outro__text {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   color: white;
+}
+
+.outro__restart {
+  padding: 1rem 2rem;
+  border: none;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+  color: #3535cc;
+  background: white;
+  border-radius: 32px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.42s ease-in-out;
+  z-index: 1;
+  display: inline-block;
+}
+
+.outro__restart:hover {
+  color: white;
+}
+
+.outro__restart:before {
+  content: "";
+  background: #3535cc;
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  border-radius: 100%;
+  left: 50%;
+  bottom: 0;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  z-index: -1;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.outro__restart:hover:before {
+  width: 200%;
+  height: 300%;
+  border-radius: 100%;
 }
 
 /* RESPONSIVE */

@@ -88,8 +88,9 @@ chapter in computer science.`,
         ),
         title: "IT Helpdesk",
         subtitle: `2023-2025 · Acadia University
-Supported students and staff with tickets,
-devices, software, and day-to-day IT issues.`,
+Supported students and staff with
+tickets, devices, software, and
+day-to-day IT issues.`,
       },
       {
         cameraRailDist: -1,
@@ -100,8 +101,9 @@ devices, software, and day-to-day IT issues.`,
         ),
         title: "Data Analyst Co-op",
         subtitle: `2024 · Acadia University
-Improved reporting by 20%, redesigned ETL
-flows, and automated recurring data work.`,
+Improved reporting by 20%,
+redesigned ETL flows, and
+automated recurring data work.`,
       },
       {
         cameraRailDist: 1.5,
@@ -136,8 +138,8 @@ students across strategy and operations.`,
         ),
         title: "Enrollment Coordinator",
         subtitle: `2025-2026 · Oxford International
-Improved CRM accuracy and built analytics
-that supported better forecasting.`,
+Improved CRM accuracy, built analytics
+and supported better forecasting.`,
       },
     ];
   }, []);
