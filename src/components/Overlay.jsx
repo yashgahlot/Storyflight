@@ -3,7 +3,13 @@ import { usePlay } from "../contexts/Play";
 
 export const Overlay = () => {
   const { progress } = useProgress();
-  const { play, end, setPlay, hasScroll } = usePlay();
+  const { play, end, setPlay, setEnd, hasScroll, setHasScroll } = usePlay();
+
+  const handleRestart = () => {
+    setEnd(false);
+    setPlay(false);
+    setHasScroll(false);
+  };
   return (
     <div
       className={`overlay ${play ? "overlay--disable" : ""}
@@ -32,7 +38,12 @@ export const Overlay = () => {
         </div>
       )}
       <div className={`outro ${end ? "outro--appear" : ""}`}>
-        <p className="outro__text">Thanks for riding through my journey.</p>
+        <div className="outro__content">
+          <p className="outro__text">Thanks for riding through my journey.</p>
+          <button className="outro__restart" onClick={handleRestart}>
+            Restart
+          </button>
+        </div>
       </div>
     </div>
   );
