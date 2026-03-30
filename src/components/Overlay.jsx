@@ -3,12 +3,10 @@ import { usePlay } from "../contexts/Play";
 
 export const Overlay = () => {
   const { progress } = useProgress();
-  const { play, end, setPlay, setEnd, hasScroll, setHasScroll } = usePlay();
+  const { play, end, setPlay, hasScroll } = usePlay();
 
   const handleRestart = () => {
-    setEnd(false);
-    setPlay(false);
-    setHasScroll(false);
+    window.location.reload();
   };
   return (
     <div

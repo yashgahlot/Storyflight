@@ -477,7 +477,7 @@ that supported better forecasting.`,
     let lerpedScrollOffset = THREE.MathUtils.lerp(
       lastScroll.current,
       targetScrollOffset,
-      delta * 12
+      delta * 6
     );
     // PROTECT BELOW 0 AND ABOVE 1
     lerpedScrollOffset = Math.min(lerpedScrollOffset, 1);
